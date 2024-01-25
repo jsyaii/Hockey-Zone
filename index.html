@@ -1,15 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEA ZONE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEA ZONE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- tailwind and css -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/2abd32a97a.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
+  <header>
+
+    <div class="navbar py-5">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-4xl font-bold">Hockey<span class=" text-[#FF4240]">'</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-lg">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class=" flex items-center gap-6">
+          <p class=" hidden lg:block text-[#000000] text-lg "><i class="fa-solid fa-magnifying-glass"></i></p>
+          <a class="btn bg-red-400 px-5 py-2 text-2xl text-white">Get Ticket</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+  <!-- banner part -->
+
+  <main>
+
+    <div class="banner-part ">
+
+      <div class="carousel w-full ">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class=" relative ">
+
+      <div class="h-[150px]  bg-black lg:-top-[250px] absolute right-8 rounded-2xl text-white lg:p-5">
+        <h1 class="text-xl lg:text-3xl font-bold ">Meet all the heroes from the field </h1>
+        <br>
+        <p>You can meet here all our legendary players.and you can see their picture here also.</p>
+      </div>
+    </div>
+
+    <!-- indicator -->
+
+    <section class="my-72 container mx-auto lg:my-28">
+
+      <div class="text-center ">
+        <h1 class="text-3xl font-bold">Professional Hockeys Club</h1>
+        <br>
+        <p>Welcome to our professional hockey club.
+          <br>you can find here exceptional things.
+        </p>
+      </div>
+      <br>
+      <!--  -->
+      <div class="flex flex-col lg:flex-row  gap-5 justify-between my-10">
+        <div class="justify-center text-center ">
+          <div class="radial-progress text-red-600" style="--value:70;" role="progressbar">70%</div>
+          <h3 class="text-2xl">Prayer Facility</h3>
+          <p>we give you player facility</p>
+        </div>
+        <div class="justify-center text-center">
+          <div class="radial-progress text-blue-500" style="--value:70;" role="progressbar">70%</div>
+          <h3 class="text-2xl">Prayer Facility</h3>
+          <p>we give you player facility</p>
+        </div>
+        <div class="justify-center text-center">
+          <div class="radial-progress text-green-700" style="--value:70;" role="progressbar">70%</div>
+          <h3 class="text-2xl">Prayer Facility</h3>
+          <p>we give you player facility</p>
+        </div>
+        <div class="justify-center text-center">
+          <div class="radial-progress text-yellow-400" style="--value:70;" role="progressbar">70%</div>
+          <h3 class="text-2xl">Prayer Facility</h3>
+          <p>we give you player facility</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="container mx-auto my-10 ">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold">Programe Section</h2>
+        <br>
+        <p>welcome to our programe section.from here you can learn about our programming details
+          <br>and our course details here
+        </p>
+
+      </div>
+      <br>
+      <!--  -->
+      <div class="flex gap-5 ">
+        <div class="bg-[url(images/2.png)] flex-1 bg-cover bg-center h-[60vh] relative rounded-2xl">
+          <div class="absolute bottom-3 p-10 lg:p-18 text-white">
+            <h2 class="font-bold text-2xl">Junior PROGRAM</h2>
+            <p class="my-5">You can find junior crash course here</p>
+            <button class="bg-red-600 btn text-white border-none">Register Now!</button>
+          </div>
+        </div>
+        <div class="bg-[url(images/3.png)] flex-1 bg-cover bg-center h-[60vh] relative rounded-2xl">
+          <div class="absolute bottom-3 p-10 lg:p-18 text-white">
+            <h2 class="font-bold text-2xl">Junior PROGRAM</h2>
+            <p class="my-5">You can find junior crash course here</p>
+            <button class="bg-red-600 btn text-white border-none">Register Now!</button>
+          </div>
+        </div>
+
+        <!--  -->
+
+
+        <!--  -->
+
+      </div>
+      <br>
+
+      <div class="bg-[url(images/4.png)] flex-1 bg-cover bg-center h-[60vh] relative rounded-2xl">
+        <div class="absolute bottom-3 p-10 lg:p-18 text-white">
+          <h2 class="font-bold text-2xl">Junior PROGRAM</h2>
+          <p class="my-5">You can find junior crash course here</p>
+          <button class="bg-red-600 btn text-white border-none">Register Now!</button>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <!--  -->
+    <section class="container mx-auto my-10">
+
+      <div class="text-center">
+        <h2 class="text-3xl font-bold">Our New Products</h2>
+        <br>
+        <p>welcome to our programe section.from here you can learn about our programming details
+          <br>and our course details here
+        </p>
+
+      </div>
+      <br>
+
+
+      <!--  -->
+      <div class="grid grid-cols-2">
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="Images/5.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <div class="flex my-2">
+              <p><i class="fa-solid fa-star text-yellow-400"></i> 5.0</p>
+              <p> <i class="fa-solid fa-eye"></i> 20</p>
+              <p> <i class="fa-solid fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex justify-around">
+              <p class="text-red-700 font-bold">price-$22.0</p>
+              <p class="text-gray-400 "><i class="fa-solid fa-cart-shopping"></i> delivery free:Free</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="Images/6.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <div class="flex my-2">
+              <p><i class="fa-solid fa-star text-yellow-400"></i> 5.0</p>
+              <p> <i class="fa-solid fa-eye"></i> 20</p>
+              <p> <i class="fa-solid fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex">
+              <p class="text-red-700 font-bold">price-$22.0</p>
+              <p class="text-gray-400 "><i class="fa-solid fa-cart-shopping"></i> delivery free:Free</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="Images/7.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <div class="flex my-2">
+              <p><i class="fa-solid fa-star text-yellow-400"></i> 5.0</p>
+              <p> <i class="fa-solid fa-eye"></i> 20</p>
+              <p> <i class="fa-solid fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex">
+              <p class="text-red-700 font-bold">price-$22.0</p>
+              <p class="text-gray-400 "><i class="fa-solid fa-cart-shopping"></i> delivery free:Free</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="Images/8.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <div class="flex my-2">
+              <p><i class="fa-solid fa-star text-yellow-400"></i> 5.0</p>
+              <p> <i class="fa-solid fa-eye"></i> 20</p>
+              <p> <i class="fa-solid fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex">
+              <p class="text-red-700 font-bold">price-$22.0</p>
+              <p class="text-gray-400 "><i class="fa-solid fa-cart-shopping"></i> delivery free:Free</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="Images/9.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <div class="flex my-2">
+              <p><i class="fa-solid fa-star text-yellow-400"></i> 5.0</p>
+              <p> <i class="fa-solid fa-eye"></i> 20</p>
+              <p> <i class="fa-solid fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex">
+              <p class="text-red-700 font-bold">price-$22.0</p>
+              <p class="text-gray-400 "><i class="fa-solid fa-cart-shopping"></i> delivery free:Free</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="Images/10.png" alt="Movie" /></figure>
+          <div class="card-body">
+            <div class="flex my-2">
+              <p><i class="fa-solid fa-star text-yellow-400"></i> 5.0</p>
+              <p> <i class="fa-solid fa-eye"></i> 20</p>
+              <p> <i class="fa-solid fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="flex">
+              <p class="text-red-700 font-bold">price-$22.0</p>
+              <p class="text-gray-400 "><i class="fa-solid fa-cart-shopping"></i> delivery free:Free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <!--  -->
+
+    <section class="container mx-auto my-10">
+
+      <div class="text-center">
+        <h2 class="text-3xl font-bold">Clints Question</h2>
+        <br>
+        <p>welcome to our programe section.from here you can learn about our programming details
+          <br>and our course details here
+        </p>
+
+      </div>
+      <br>
+
+      <!--  -->
+      <div class="flex flex-col lg:flex-row gap-5">
+        <div class=" flex-1">
+          <img src="Images/11.png" alt="" srcset="">
+        </div>
+        <div class="flex-1">
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-medium">
+              Focus me to see content
+            </div>
+            <div class="collapse-content">
+              <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+          </div>
+
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-medium">
+              Focus me to see content
+            </div>
+            <div class="collapse-content">
+              <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-medium">
+              Focus me to see content
+            </div>
+            <div class="collapse-content">
+              <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-medium">
+              Focus me to see content
+            </div>
+            <div class="collapse-content">
+              <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-medium">
+              Focus me to see content
+            </div>
+            <div class="collapse-content">
+              <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+            <div class="collapse-title text-xl font-medium">
+              Focus me to see content
+            </div>
+            <div class="collapse-content">
+              <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!--  -->
+
+    <section>
+      <div class=" text-center">
+        <hr class="my-12">
+        <h1 class="text-3xl lg:text-5xl font-bold my-5">Get In Touch</h1>
+        <p>We are an inclusive hockey club that welcomes all who want to play <br> hockey and be part of a thriving
+          local sports club.</p>
+        <hr class=" my-14">
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+
+        <div class=" border-2 border-gray-200 rounded-xl p-5 shadow-lg">
+
+          <div class="my-5 flex justify-center ">
+            <div class="px-10 py-10 bg-[#f1f5f9] h-[250px] w-[500px] rounded-xl shadow-lg">
+              <img class="h-[70px] w-[70px]" src="Images/Group 1171275317.png" alt="">
+              <p class=" text-xl my-3 text-[#919292]">Phone Number : </p>
+              <h3 class=" text-3xl font-bold">01763717291</h3>
+            </div>
+          </div>
+
+          <div class="my-5 flex justify-center">
+            <div class="px-10 py-10 bg-[#f9eaf6] h-[250px] w-[500px] rounded-xl  shadow-lg">
+              <img class="h-[70px] w-[70px]" src="Images/Group 1171275318.png" alt="">
+              <p class=" text-xl my-3 text-[#919292]">Email : </p>
+              <h3 class=" text-3xl font-bold">jesi@gmail.com</h3>
+            </div>
+          </div>
+
+          <div class="my-5 flex justify-center">
+            <div class="px-10 py-10 bg-[#f8fef8] h-[250px] w-[500px] rounded-xl  shadow-lg">
+              <img class="h-[70px] w-[70px]" src="Images/Group 1171275321.png" alt="">
+              <p class=" text-xl my-3 text-[#919292]">Location : </p>
+              <h3 class=" text-3xl font-bold">Mongla,Khulna</h3>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div>
+          <div class="grid gap-6 grid-cols-2">
+            <div>
+              <label class="label">
+                <span class="label-text text-2xl font-bold">Your Name</span>
+              </label>
+              <input type="Enter your full name" placeholder="email"
+                class="input input-bordered border-none  bg-gray-100" required />
+            </div>
+            <div>
+              <label class="label">
+                <span class="label-text text-2xl font-bold">Your Emai</span>
+              </label>
+              <input type="email" placeholder="Enter your emai" class="input input-bordered border-none  bg-gray-100"
+                required />
+            </div>
+            <div>
+              <label class="label">
+                <span class="label-text text-2xl font-bold">Subject</span>
+              </label>
+              <input type="email" placeholder="Enter your subjec" class="input input-bordered border-none  bg-gray-100"
+                required />
+            </div>
+            <div>
+              <label class="label">
+                <span class="label-text text-2xl font-bold">Phone Number</span>
+              </label>
+              <input type="email" placeholder="Enter your phone numbe"
+                class="input input-bordered border-none  bg-gray-100" required />
+            </div>
+
+          </div>
+
+          <div>
+            <label class="label">
+              <span class="label-text text-2xl font-bold my-4">Your Name</span>
+            </label>
+            <textarea placeholder="Bio" class="textarea textarea-bordered textarea-lg border-none  bg-gray-100"
+              cols="50" rows="10"></textarea>
+
+          </div>
+          <button class=" btn bg-red-400 w-[100%] lg:w-[85%] text-white text-2xl my-5">Send Message</button>
+
+        </div>
+      </div>
+
+      <div class="bg-gray-100 h-[200px] my-10 rounded-lg flex items-center justify-center">
+        <div>
+          <h1 class="text-3xl font-bold">Social Media</h1>
+          <div class=" flex gap-5 text-4xl my-5">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-brands fa-github"></i></p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+  </main>
+  <footer class="bg-black">
+    <footer class="footer p-10 text-white">
+      <aside>
+        <h1 class="font-bold text-2xl">GET IN TOUCH</h1>
+        <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+        <p> <i class="fa-solid fa-envelope"></i> email</p>
+        <p class=""><i class="fa-solid fa-phone"></i> 0302864557878</p>
+
+
+      </aside>
+
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
+  </footer>
+
 </body>
+
 </html>
